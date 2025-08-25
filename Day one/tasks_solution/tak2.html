@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Registration Form</title>
+</head>
+<body>
+  <form>
+    <table border="1" cellpadding="5" cellspacing="0" align="center">
+      <tr>
+        <th colspan="2">registration Form</th>
+      </tr>
+      <tr>
+        <td>first name</td>
+        <td><input type="text" name="firstname"></td>
+      </tr>
+      <tr>
+        <td>Last name</td>
+        <td><input type="text" name="lastname"></td>
+      </tr>
+      <tr>
+        <td>User name</td>
+        <td><input type="text" name="username"></td>
+      </tr>
+      <tr>
+        <td>Pass</td>
+        <td><input type="password" name="password"></td>
+      </tr>
+      <tr>
+        <td>Track</td>
+        <td>
+          <select name="track">
+            <option value="BI">BI</option>
+            <option value="CS">CS</option>
+            <option value="IT">IT</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td rowspan="2">Gender</td>
+        <td><input type="radio" name="gender" value="male"> Male</td>
+      </tr>
+      <tr>
+        <td><input type="radio" name="gender" value="female"> Female</td>
+      </tr>
+      <tr>
+        <td rowspan="3">Favorites</td>
+        <td>
+          <input type="checkbox" name="fav" value="football"> football
+          <input type="checkbox" name="fav" value="basketball"> basketball
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <input type="checkbox" name="fav" value="games"> games
+          <input type="checkbox" name="fav" value="reading"> reading
+          <input type="checkbox" name="fav" value="swimming"> swimming
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <input type="checkbox" name="fav" value="travel"> Travel
+        </td>
+      </tr>
+      <tr>
+        <td>description</td>
+        <td><textarea name="description" rows="4" cols="30"></textarea></td>
+      </tr>
+      <tr>
+        <td colspan="2" align="center">
+          <input type="submit" value="Submit">
+          <input type="reset" value="Reset">
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2" align="center">
+          <input type="file" name="upload">
+        </td>
+      </tr>
+    </table>
+  </form>
+</body>
+</html>

@@ -1,0 +1,9 @@
+- web structure 
+- how it works 
+- html 
+- tags & attributes 
+- formatting tags 
+- images & links 
+- lists 
+- tables 
+- forms 
