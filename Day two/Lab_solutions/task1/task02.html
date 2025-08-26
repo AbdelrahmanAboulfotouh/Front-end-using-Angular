@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flex - Digital Studio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      line-height: 1.6;
+      background: #fff;
+    }
+
+    header {
+      position: absolute;
+      top: 0;
+      left: 5;
+      width: 100%;
+      padding: 20px 50px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 10;
+    }
+
+    header h2 {
+      color: #333;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #333;
+      font-size: 14px;
+      transition: color 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #777;
+    }
+
+    .hero {
+      height: 100vh;
+      background: url('cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIzLTA3L3Vwd2s2MTg0MzM0NC13aWtpbWVkaWEtaW1hZ2UtbGtocWw2YWIuanBn.jpg') no-repeat center center/cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+      color: white;
+    }
+
+    .hero-content h1 {
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+
+    .hero-content p {
+      font-size: 14px;
+      margin-bottom: 20px;
+    }
+
+    .hero-content button {
+      padding: 10px 20px;
+      background: white;
+      border: none;
+      color: #333;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .services {
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .services h2 {
+      margin-bottom: 10px;
+    }
+
+    .service-boxes {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 30px;
+    }
+
+    .service-box {
+      width: 200px;
+      height: 200px;
+      background: #e6d1c3;
+    }
+
+    .portfolio {
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .portfolio h2 {
+      margin-bottom: 10px;
+    }
+
+    .portfolio-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 10px;
+      margin-top: 30px;
+    }
+
+    .portfolio-grid img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    @media(max-width: 768px) {
+      .portfolio-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .service-boxes {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h2>Flex</h2>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Portfolio</a></li>
+        <li><a href="#">Team</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1>DIGITAL STUDIO</h1>
+      <p>LET US DESIGN YOUR WEBSITE</p>
+      <button>RESPONSIVE TEMPLATE</button>
+    </div>
+  </section>
+
+  <section class="services">
+    <h2>OUR SERVICES</h2>
+    <p>LET US TO HELP YOU TO CREATE PROFESSIONAL WEBSITE</p>
+    <div class="service-boxes">
+      <div class="service-box"></div>
+      <div class="service-box"></div>
+      <div class="service-box"></div>
+    </div>
+  </section>
+
+  <!-- Portfolio Section -->
+  <section class="portfolio">
+    <h2>OUR PORTFOLIO</h2>
+    <p>WHAT WE HAVE DONE SO FAR</p>
+    <div class="portfolio-grid">
+      <img src="images.jpeg" alt="">
+      <img src="images (1).jpeg" alt="">
+      <img src="aa8c5ea9-156e-4dd1-92de-0cfbbc9c68ec.__CR0,0,300,300_PT0_SX300_V1___.jpg" alt="">
+      <img src="360_F_134268957_KNGRMymxN7Ptlk1DmPF7dBzaQ78nrFc1.jpg" alt="">
+     
+    </div>
+  </section>
+
+</body>
+</html>

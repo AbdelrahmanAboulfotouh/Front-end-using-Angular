@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recent Work Section</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #fff;
+      color: #333;
+      line-height: 1.6;
+      padding: 40px;
+    }
+
+    .section {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .section p {
+      max-width: 900px;
+      margin: 0 auto 20px auto;
+      font-size: 14px;
+      color: #555;
+    }
+
+    .work-grid {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin: 20px 0;
+    }
+
+    .work-box {
+      width: 215px;
+      height: 150px;
+      background: #333;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 14px;
+    }
+
+    .view-more {
+      margin-top: 10px;
+      text-align: right;
+      color: #f77b42;
+      font-size: 14px;
+      cursor: pointer;
+    }
+
+    .services {
+      margin-top: 50px;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+    }
+
+    .service-box {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+    }
+
+    .icon {
+      width: 32px;
+      height: 32px;
+      background: #333;
+      color: #fff;
+      font-size: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .service-content h4 {
+      font-size: 14px;
+      text-transform: uppercase;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    .service-content p {
+      font-size: 13px;
+      color: #555;
+      margin-bottom: 5px;
+    }
+
+    .service-content a {
+      font-size: 13px;
+      color: #f77b42;
+      text-decoration: none;
+    }
+
+    @media(max-width: 900px) {
+      .services {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media(max-width: 500px) {
+      .work-grid {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .services {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="section">
+    <p>
+      Welcome to our creative portfolio. Here you will find a collection of our most recent projects. 
+      We specialize in delivering high-quality, unique, and professional designs tailored to your needs.
+    </p>
+    <hr>
+  </div>
+
+  <div class="work-grid">
+    <div class="work-box">215 x 150px (Project 1)</div>
+    <div class="work-box">215 x 150px (Project 2)</div>
+    <div class="work-box">215 x 150px (Project 3)</div>
+    <div class="work-box">215 x 150px (Project 4)</div>
+  </div>
+
+  <div class="view-more">VIEW ALL OUR RECENT WORK HERE</div>
+
+  <hr style="margin: 40px 0;">
+
+  <div class="services">
+    
+    <div class="service-box">
+      <div class="icon">ICON</div>
+      <div class="service-content">
+        <h4>WEB DESIGN</h4>
+        <p>We design modern and responsive websites to help your business grow online.</p>
+        <a href="#">Read More >></a>
+      </div>
+    </div>
+
+    <div class="service-box">
+      <div class="icon">ICON</div>
+      <div class="service-content">
+        <h4>GRAPHIC DESIGN</h4>
+        <p>Our team creates stunning graphics and visuals for branding and marketing.</p>
+        <a href="#">Read More >></a>
+      </div>
+    </div>
+
+    <div class="service-box">
+      <div class="icon">ICON</div>
+      <div class="service-content">
+        <h4>DIGITAL MARKETING</h4>
+        <p>Boost your reach with customized digital marketing and SEO strategies.</p>
+        <a href="#">Read More >></a>
+      </div>
+    </div>
+
+    <div class="service-box">
+      <div class="icon">ICON</div>
+      <div class="service-content">
+        <h4>APP DEVELOPMENT</h4>
+        <p>We build mobile and web applications with user-friendly experiences.</p>
+        <a href="#">Read More >></a>
+      </div>
+    </div>
+
+    <div class="service-box">
+      <div class="icon">ICON</div>
+      <div class="service-content">
+        <h4>BRANDING</h4>
+        <p>We help businesses establish a strong and memorable brand identity.</p>
+        <a href="#">Read More >></a>
+      </div>
+    </div>
+
+    <div class="service-box">
+      <div class="icon">ICON</div>
+      <div class="service-content">
+        <h4>CONTENT CREATION</h4>
+        <p>Engaging content tailored to your target audience for blogs and social media.</p>
+        <a href="#">Read More >></a>
+      </div>
+    </div>
+
+    <div class="service-box">
+      <div class="icon">ICON</div>
+      <div class="service-content">
+        <h4>PHOTOGRAPHY</h4>
+        <p>Professional product and lifestyle photography for your brand campaigns.</p>
+        <a href="#">Read More >></a>
+      </div>
+    </div>
+
+    <div class="service-box">
+      <div class="icon">ICON</div>
+      <div class="service-content">
+        <h4>VIDEO PRODUCTION</h4>
+        <p>High-quality video editing and production services to tell your story.</p>
+        <a href="#">Read More >></a>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>
