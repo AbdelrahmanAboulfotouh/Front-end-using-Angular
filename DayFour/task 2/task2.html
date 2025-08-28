@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Character Game</title>
+  <link rel="stylesheet" href="task2.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Character Game</h2>
+    <div class="stars">⭐ ⭐ ⭐</div>
+
+    <p>
+      Write a function that takes a sentence and a letter to search for it 
+      in the given sentence and return its locations in that sentence.
+    </p>
+
+    <div class="game-box">
+      <button class="btn input-btn">Input</button>
+      <input id="stringInput" type="text" placeholder="Enter a sentence">
+
+      <label>Letter</label>
+      <input id="letterInput" type="text" maxlength="1" placeholder="Enter a letter">
+
+      <button class="btn output-btn" onclick="findLetterPositions()">Output</button>
+      <input id="result" type="text" readonly placeholder="[ ]">
+    </div>
+  </div>
+
+  <script src="task2.js"></script>
+</body>
+</html>
