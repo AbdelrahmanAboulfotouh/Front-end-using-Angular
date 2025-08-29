@@ -1,0 +1,32 @@
+  body {
+      background-color: #2f4f4f;
+      text-align: center;
+      font-family: Arial, sans-serif;
+      margin-top: 50px;
+    }
+
+    input {
+      padding: 5px;
+      font-size: 16px;
+      border-radius: 6px;
+      border: 2px solid black;
+    }
+
+    .container {
+      margin-top: 40px;
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+    }
+
+    .circle {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      background-color: gray;
+      border: 2px solid black;
+    }
+
+    .highlight {
+      background-color: yellow !important;
+    }
