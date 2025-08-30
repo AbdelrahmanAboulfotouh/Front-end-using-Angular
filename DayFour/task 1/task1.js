@@ -1,23 +1,28 @@
-function checkFizzBuzz() {
-  let num = document.getElementById("numberInput").value;
+function findLetterLocations(sentence, letter) {
+  let positions = [];
 
-  num = Number(num);
+  for (let i = 0; i < sentence.length; i++) {
+    if (sentence[i] === letter) {
+      positions.push(i + 1); 
+    }
+  }
 
-  if (isNaN(num)) {
-    document.getElementById("result").value = "Please enter a valid number!";
+  if (positions.length === 0) {
+    return "Letter not found!";
+  } else {
+    return "Letter found at positions: " + positions.join(", ");
+  }
+}
+
+function searchLetter() {
+  let sentence = document.getElementById("sentence").value;
+  let letter = document.getElementById("letter").value;
+
+  if (letter.length !== 1) {
+    document.getElementById("result").innerText = "Please enter exactly ONE letter!";
     return;
   }
 
-  let output = "";
-  if (num % 3 === 0 && num % 5 === 0) {
-    output = "fizz buzz";
-  } else if (num % 3 === 0) {
-    output = "fizz";
-  } else if (num % 5 === 0) {
-    output = "buzz";
-  } else {
-    output = "none";
-  }
-
-  document.getElementById("result").value = output;
+  let result = findLetterLocations(sentence, letter);
+  document.getElementById("result").innerText = result;
 }

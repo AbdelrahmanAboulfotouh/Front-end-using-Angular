@@ -1,22 +1,25 @@
-function findLetterPositions() {
-  let sentence = document.getElementById("stringInput").value;
-  let letter = document.getElementById("letterInput").value;
-  let positions = [];
+function fizzBuzz(number) {
+  if (number % 3 === 0 && number % 5 === 0) {
+    return "fizz buzz";
+  } else if (number % 3 === 0) {
+    return "fizz";
+  } else if (number % 5 === 0) {
+    return "buzz";
+  } else {
+    return "none";
+  }
+}
 
-  if (letter.length !== 1) {
-    document.getElementById("result").value = "Please enter ONE letter!";
+function checkFizzBuzz() {
+  let num = document.getElementById("num").value;
+
+  num = Number(num);
+
+  if (isNaN(num)) {
+    document.getElementById("result").innerText = "Please enter a valid number!";
     return;
   }
 
-  for (let i = 0; i < sentence.length; i++) {
-    if (sentence[i].toLowerCase() === letter.toLowerCase()) {
-      positions.push(i); 
-    }
-  }
-
-  if (positions.length > 0) {
-    document.getElementById("result").value = "[" + positions.join(", ") + "]";
-  } else {
-    document.getElementById("result").value = "Letter not found";
-  }
+  let result = fizzBuzz(num);
+  document.getElementById("result").innerText = "Result: " + result;
 }

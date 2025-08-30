@@ -1,28 +1,20 @@
 <!DOCTYPE html>
-<html>
+<html >
 <head>
-  <title>Array Math</title>
+  <title>Array Sorting</title>
 </head>
 <body>
-  <script>
-    // Create an empty array
-    let numbers = [];
+  <h1>Array Sorting </h1>
 
-    // Take 3 inputs from the user
-    for (let i = 0; i < 3; i++) {
-      let value = parseFloat(prompt(`Enter number ${i+1}:`));
-      numbers.push(value);
-    }
+  <input type="number" id="num1" placeholder="Enter number 1">
+  <input type="number" id="num2" placeholder="Enter number 2">
+  <input type="number" id="num3" placeholder="Enter number 3">
+  <input type="number" id="num4" placeholder="Enter number 4">
+  <input type="number" id="num5" placeholder="Enter number 5">
+  <button onclick="sortArray()">Sort Array</button>
 
-    let [a, b, c] = numbers;
+  <div id="result"></div>
 
-    let sum = a + b + c;
-    let product = a * b * c;
-    let division = a / b / c;
-
-    document.write(`Sum of the given 3 values: ${a} + ${b} + ${c} = ${sum} <br>`);
-    document.write(`Multiplication of 3 values: ${a} * ${b} * ${c} = ${product} <br>`);
-    document.write(`Division of 3 values: ${a} / ${b} / ${c} = ${division}`);
-  </script>
+  <script src="task4.js"></script>
 </body>
 </html>
