@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Custom Alert Box</title>
+  <link rel="stylesheet" href="task3.css">
+</head>
+<body>
+
+  <div class="buttons">
+    <button onclick="showAlert('success')">✔ Success Alert</button>
+    <button onclick="showAlert('error')">✖ Error Alert</button>
+  </div>
+
+  <!-- Alert Container -->
+  <div id="alert-box" class="alert-box hidden">
+    <h2 id="alert-title"></h2>
+    <div id="alert-icon"></div>
+    <p id="alert-message"></p>
+  </div>
+
+  <script src="task3.js"></script>
+</body>
+</html>
