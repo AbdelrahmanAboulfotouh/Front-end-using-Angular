@@ -1,10 +1,7 @@
- function displayMessage() {
-      let msg = document.getElementById("userMsg").value;
+let message = prompt("Enter a message:");
 
-      let result = "";
-      for (let i = 1; i <= 6; i++) {
-        result += `<h${i}>${msg}</h${i}>`;
-      }
+let container = document.getElementById("output");
 
-      document.getElementById("output").innerHTML = result;
-    }
+for (let i = 1; i <= 6; i++) {
+  container.innerHTML += `<h${i}>${message}</h${i}>`;
+}

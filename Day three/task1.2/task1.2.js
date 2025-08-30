@@ -1,40 +1,39 @@
-function calculateSum() {
-      let sum = 0;
-      let values = [];
-      let flag = true;
-      while (true) {
-        let input = prompt("Enter a number (0 to stop):");
+let n = prompt("How many numbers do you want to enter?");
+n = Number(n);
 
-        if (input === null) {
-          break;
-        }
+if (isNaN(n) || n <= 0) {
+  alert("Please enter a valid positive number for n!");
+} else {
+  let sum = 0;
+  let count = 0;
+  let numbers = [];
 
-        let num = Number(input);
+  while (true) {
+    let value = prompt(`Enter number ${count + 1} of ${n}:`);
 
-        if (isNaN(num)) {
-          alert("Invalid input! Please enter a numeric value.");
-          continue; 
-        }
-
-        if (num === 0) {
-          break;
-        }
-        if(flag)
-        {
-            flag = false;
-            continue;
-        }
-
-
-        sum += num;
-        values.push(num);
-
-        if (sum > 100) {
-          break;
-        }
-      }
-
-      document.getElementById("result").innerHTML =
-        `<p>You entered: ${values.join(", ")}</p>
-         <p>Final Sum = ${sum}</p>`;
+    if (isNaN(value) || value === "") {
+      alert("Please enter a valid number!");
+      continue;
     }
+
+    value = Number(value);
+
+    if (value === 0) {
+      break;
+    }
+
+    numbers.push(value);
+
+    sum += value;
+    count++;
+
+    if (sum > 100 || count === n) {
+      break;
+    }
+  }
+
+  alert(
+    "Numbers entered: " + numbers.join(", ") +
+    "\nTotal sum: " + sum
+  );
+}
